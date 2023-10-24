@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d40ef2de68.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo-om.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Front-end Web Developer</p>
+                <h1>Hi, I'm <span>Om</span> Raj<br>NIT Patna, 2025 </h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -------------------- About ---------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Passport.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I am an undergraduate student at the National Institute of Technology Patna, pursuing ECE. I have a strong passion for front-end web development and I am skilled in creating engaging and user-friendly websites. In addition to my web development skills, I am drawn to the world of competitive programming and problem-solving. I relish the intellectual challenges they present and enjoy tackling complex challenges.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end Web Developer</span><br>Proficient in front-end web development by using HTML, CSS, JavaScript and Bootstrap</li>
+                            <li><span>Problem Solver</span><br>Proficient problem solver with a strong background in data structures and algorithms.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - current</span><br>Developing fully functional and responsive web applications and forms</li>
+                            <li><span>2022 - current</span><br>Solved 400+ data structures and algorithms based problems</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017 - 2018</span><br>Completed 10th grade with 95.4% from DAV Public School Cantonment Area, Gaya</li>
+                            <li><span>2019 - 2020</span><br>Completed 12th grade with 94.0% from DAV Public School Cantonment Area, Gaya</li>
+                            <li><span>2021 - current</span><br>Currently pursuing Bachelor of Technology in ECE at National Institute of Technology, Patna, Bihar (India)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------   Services    -------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>Experienced front-end web developer proficient in HTML, CSS, and JavaScript with a strong focus on creating visually appealing, responsive, and user-friendly websites. Skilled in front-end frameworks and passionate about optimizing web performance and problem solver.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-stack-overflow"></i>
+                    <h2>Problem Solver</h2>
+                    <p>Experienced in tackling complex coding challenges and optimizing solutions for problems. Skilled in algorithmic thinking and debugging, consistently delivering innovative and practical solutions to a wide range of DSA problems.</p>
+                    <a href="https://auth.geeksforgeeks.org/user/omraj0100/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-wordpress-simple"></i>
+                    <h2>WordPress Developer</h2>
+                    <p>Aspiring WordPress developer with a foundational understanding of HTML, CSS, and WordPress. Eager to learn and contribute to web development projects. Detail-oriented and a quick learner with a strong commitment to creating user-friendly websites.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------  Portfolio   ------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p>My "Personal Portfolio" website is a showcase of my work as a front-end web developer. It offers an elegant, user-friendly design, highlights my projects, and provides insights into my skills and background. Visit to explore my work and get to know me better.</p>
+                        <a href="#header"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3>All In One Widget</h3>
+                        <p>My "All-in-One Widget" is a versatile digital tool I developed, combining essential features to simplify user's daily routines. This widget seamlessly integrates a digital clock, analog clock, day and date display, a calendar, and a to-do list, providing a single, accessible interface for time management, scheduling, and task tracking.</p>
+                        <a href="https://omraj0.github.io/Widget/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Introducing a real-time "Weather Forecast App" built using HTML, CSS, and JavaScript. This app focuses on simplicity and efficiency, providing users with the essential weather information they need in a clean and straightforward interface. Be prepared for any weather, wherever you are.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!------------------------  Contact  ------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>omraj0100@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8789195638</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/om-raj-915695228/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/omraj0"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/edgy._.omi/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://m.facebook.com/profile.php/?id=100023227296794"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <a href="Images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-solid fa-om"></i>  Copyright © Om Raj. All rights are reserved.  <i class="fa-solid fa-om"></i></p>
+        </div>
+    </div>
+
+
+    <!--------------------------Scripts------------------------->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbwssvPeli4FmxrtkH7PDEEcyU37bCjxGnpJcmyedAmelCYPM9vCxxZywztXpeAB0F0I/exec>'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+
+</body>
+</html>
