@@ -9,7 +9,7 @@ html{
 }
 body{
     /* background: #0a0a0a; */
-    background-image: url(Images/wallpaper-background2.jpg);
+    background-image: url(Images/wallpaper-background.jpg);
     background-size: contain;
     background-repeat: repeat-y;
     /* background-size: contain; */
@@ -35,7 +35,7 @@ nav{
     position: fixed;
     width: 84%;
     background-color: #0a0a0a;
-    opacity: 0.8;
+    opacity: 0.9;
     z-index: 1;
     top: 15px;
     border: 2px solid white;
@@ -122,7 +122,10 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     width: 100%;
-    border-radius: 30px;
+    border-radius: 0% 0% 25% 0%;
+    border-right: 10px solid #40729e;
+    border-bottom: 10px solid #40729e;
+    /* border-radius: 30px; */
 }
 .about-col-2{
     /* border: 2px solid salmon; */
@@ -244,7 +247,8 @@ nav ul li a:hover::after{
     padding: 20px 40px;
     font-size: 12px;
     font-weight: 300;
-    border-radius: 20px;
+    border-radius: 35% 30% / 80% 80%;
+    border-radius: 20% 20% 40% 40%;
     transition: background 0.5s, transform 0.5s;
 }
 .coding-list div img{
@@ -303,7 +307,8 @@ nav ul li a:hover::after{
     width: 100%;
     height: 400px;
     display: block;
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    border-radius: 35% 55% / 40% 10%;
     background-color: white;
     transition: transform 0.5s;
 }
@@ -311,7 +316,8 @@ nav ul li a:hover::after{
     width: 100%;
     height: 0;
     background: linear-gradient(rgba(0,0,0,0.6), #73beff);
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    border-radius: 35% 55% / 40% 10%;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -352,7 +358,8 @@ nav ul li a:hover::after{
     background-color: #1e1e1e;
 }
 .work:hover img{
-    transform: scale(1.1);
+    transform: scale(0.9);
+    opacity: 0.9;
 }
 .work:hover .layer{
     height: 100%;
