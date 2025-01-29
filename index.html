@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="Images/favicon.png" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d40ef2de68.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo-om.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#coding">Coding</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Hii, My name is</p>
+                <h1><span>Om</span> Raj</h1>
+                <div class="sub-header-text">
+                    <div style="font-size:5vw;" class="role-text">I'm a <span class="role"></span></div>
+                    <h6>I am a final-year student at the <span>National Institute of Technology Patna</span>, with a strong interest in <span>Web Development</span> and <span>Problem Solving</span>.<br><br>I am currently working as an <span>SDE Intern</span> at <span>Analytics Vidhya</span> and actively seeking new job opportunities as a <span>Software Engineer</span> to apply and further develop my skills.</h6>
+                </div>
+
+                <div class="btn-pink-head">
+                    <a href="#contact"><button class="btn-pink">Hire Me</button></a>
+                    <a href="Images/my-cv.pdf"><button class="btn-pink">Resume</button></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- -------------------- About ---------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Passport.png" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I am a final-year student at the National Institute of Technology Patna, studying Electronics and Communication Engineering. I have a strong passion for web development and problem-solving. Currently, I am working as an SDE Intern at Analytics Vidhya, where I am honing my skills in backend development and exploring various frameworks. I am actively seeking new job opportunities to apply and further develop my skills as a Software Engineer.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Backend Developer</span><br>Experienced in building and maintaining server-side applications using frameworks like Django, Rest Framework, Node.js and Express.js.</li>
+                            <li><span>Problem Solver</span><br>Strong proficiency in data structures and algorithms, regularly practicing on platforms like CodeChef and LeetCode.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>January 2025 - Present</span><br>SDE Intern at Analytics Vidhya: Enhanced an AV-platform by automating data filtering and reporting processes using Python and Django.</li>
+                            <li><span>June 2024 - July 2024</span><br>Web Development Intern at Octanet: Built dynamic web components and integrated backend services with MongoDB and Node.js.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017 - 2018</span><br>Completed 10th grade with 95.4% from DAV Public School Cantonment Area, Gaya</li>
+                            <li><span>2019 - 2020</span><br>Completed 12th grade with 94.0% from DAV Public School Cantonment Area, Gaya</li>
+                            <li><span>2021 - current</span><br>Currently pursuing Bachelor of Technology in ECE at National Institute of Technology, Patna, India</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------   Services    -------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Backend Developer</h2>
+                    <p>Skilled backend developer experienced in building robust, scalable, and secure server-side applications using Python, Django, GraphQL, Node.js, and MongoDB. Focused on optimizing performance, handling databases efficiently, and delivering seamless APIs for smooth user experiences.</p>
+                    <a href="https://github.com/omraj0?tab=repositories">Learn more</a>
+                </div>                
+                <div>
+                    <i class="fa-brands fa-stack-overflow"></i>
+                    <h2>Problem Solver</h2>
+                    <p>Experienced problem solver with a strong focus on algorithms, data structures, and optimizing solutions. Skilled in competitive programming, I enjoy tackling complex challenges and developing efficient, scalable solutions. I consistently work on enhancing my problem-solving abilities through platforms like CodeChef, LeetCode, and GeeksforGeeks.</p>
+                    <a href="https://auth.geeksforgeeks.org/user/omraj0100/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user">Learn more</a>
+                </div>                
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Machine Learning</h2>
+                    <p>Passionate about leveraging data to build intelligent systems. Experienced in applying machine learning techniques to solve real-world problems with projects involving classification, regression, and predictive modeling. Proficient in tools like TensorFlow, Keras, and Python, with a focus on improving model performance and achieving high accuracy.</p>
+                    <a href="https://github.com/omraj0?tab=repositories">Learn more</a>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-----------------------   Coding Profiles    -------------------------->
+    <div id="coding">
+        <div class="container">
+            <h1 class="sub-title">My Coding Profiles</h1>
+
+            <div class="coding-timeline">
+                <div class="coding-timeline-list">
+                    <div class="coding-timeline-item">
+                        <div>
+                            <a href="https://www.codechef.com/users/om_010" target="_blank"><img src="Images/codechef.png" class="codechef"></a>
+                            <a href="https://www.codechef.com/users/om_010" target="_blank"><h2>CodeChef</h2></a>
+                        </div>
+                    </div>
+                    <div class="coding-timeline-item">
+                        <div>
+                            <a href="https://codeforces.com/profile/omraj0100" target="_blank"><img src="Images/codeforces.png" class="codeforces"></a>
+                            <a href="https://codeforces.com/profile/omraj0100" target="_blank"><h2>Codeforces</h2></a>
+                        </div>
+                    </div>
+                    <div class="coding-timeline-item">
+                        <div>
+                            <a href="https://leetcode.com/om_0100/" target="_blank"><img src="Images/leetcode.png" class="leetcode"></a>
+                            <a href="https://leetcode.com/om_0100/" target="_blank"><h2>Leetcode</h2></a>
+                        </div>
+                    </div>
+                    <div class="coding-timeline-item">
+                        <div>
+                            <a href="https://auth.geeksforgeeks.org/user/omraj0100/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" target="_blank"><img src="Images/geeksforgeeks.png" class="geeksforgeeks"></a>
+                            <a href="https://auth.geeksforgeeks.org/user/omraj0100/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" target="_blank"><h2>GeeksforGeeks</h2></a>
+                        </div>
+                    </div>
+                    <div class="coding-timeline-item">
+                        <div>
+                            <a href="https://www.hackerrank.com/profile/omraj0100" target="_blank"><img src="Images/hackerrank.png" class="hackerrank"></a>
+                            <a href="https://www.hackerrank.com/profile/omraj0100" target="_blank"><h2>HackerRank</h2></a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+
+
+    <!------------------------  Portfolio   ------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="timeline-list">
+                    <div class="timeline-item" style="--accent-color:#4CADAD">
+                        <div class="date">Placement Portal</div>
+                        <div class="descr">
+                            <div class="work">
+                                <img class="work-img" src="Images/work-9.png">
+                                <div class="layer">
+                                    <p>
+                                        "Placement Portal" is a MERN stack web application designed to streamline the placement process at NIT Patna. 
+                                        It allows placement coordinators to manage company profiles and job postings, providing students with easy 
+                                        access to job listings, eligibility criteria, and application links in a structured manner.
+                                    </p>
+                                    <div class="icons-lang">
+                                        <img class="icons-lang-img" src="Images/icons8-nodejs-144.png" alt="Node.js">
+                                        <img class="icons-lang-img" src="Images/icons8-expressjs-144.png" alt="Express.js">
+                                        <img class="icons-lang-img" src="Images/icons8-react-native-144.png" alt="React.js">
+                                        <img class="icons-lang-img" src="Images/icons8-mongodb-144.png" alt="MongoDB">
+                                        <img class="icons-lang-img" src="Images/icons8-js-144.png" alt="JavaScript">
+                                        <img class="icons-lang-img" src="Images/icons8-tailwind-css-144.png" alt="Tailwind">
+                                    </div>
+                                    <div class="icons-links">
+                                        <a href="https://placement-portal-by-om.netlify.app/" target="_blank">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </a>
+                                        <a href="https://github.com/omraj0/Placement-Portal" target="_blank">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--accent-color:#FBCA3E">
+                        <div class="date">Blogs Hive</div>
+                        <div class="descr">
+                            <div class="work">
+                                <img class="work-img" src="Images/work-11.png">
+                                <div class="layer">
+                                    <p>
+                                        "Blogs Hive" is a MERN stack web application designed to allow users to read, create, edit, and delete blogs. 
+                                        It provides a dynamic and clean interface for both readers and authors, with a secure login system and user-specific dashboards. 
+                                        The platform facilitates easy navigation and a seamless blogging experience.
+                                    </p>
+                                    <div class="icons-lang">
+                                        <img class="icons-lang-img" src="Images/icons8-nodejs-144.png" alt="Node.js">
+                                        <img class="icons-lang-img" src="Images/icons8-expressjs-144.png" alt="Express.js">
+                                        <img class="icons-lang-img" src="Images/icons8-react-native-144.png" alt="React.js">
+                                        <img class="icons-lang-img" src="Images/icons8-mongodb-144.png" alt="MongoDB">
+                                        <img class="icons-lang-img" src="Images/icons8-js-144.png" alt="JavaScript">
+                                        <img class="icons-lang-img" src="Images/icons8-tailwind-css-144.png" alt="Tailwind">
+                                    </div>
+                                    <div class="icons-links">
+                                        <a href="https://github.com/omraj0/Blog-Website" target="_blank">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </a>
+                                        <a href="https://github.com/omraj0/Blog-Website" target="_blank">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="timeline-item" style="--accent-color:#1B5F8C">
+                        <div class="date">Fruits and Vegetables Recognition</div>
+                        <div class="descr">
+                            <div class="work">
+                                <img class="work-img" src="Images/work-10.png" alt="Fruits and Vegetables Recognition">
+                                <div class="layer">
+                                    <p>
+                                        "Fruits and Vegetables Recognition" is a machine learning project that uses a custom Convolutional Neural Network (CNN) to classify images of fruits and vegetables. 
+                                        With 93% accuracy, it accurately identifies various types of produce, helping users quickly identify fruits and vegetables based on images.
+                                    </p>
+                                    <div class="icons-lang">
+                                        <img class="icons-lang-img" src="Images/icons8-python-144.png" alt="Python">
+                                        <img class="icons-lang-img" src="Images/icons8-cnn-144.png" alt="CNN">
+                                        <img class="icons-lang-img" src="Images/icons8-tensorflow-144.png" alt="TensorFlow">
+                                        <img class="icons-lang-img" src="Images/icons8-pandas-144.png" alt="Pandas">
+                                        <img class="icons-lang-img" src="Images/icons8-google-colab-144.png" alt="Google Colab">
+                                    </div>
+                                    <div class="icons-links">
+                                        <a href="https://github.com/omraj0/Fruits-and-Vegetables-Recognition/blob/main/Fruits_and_Vegetables_Recognition.ipynb" target="_blank">
+                                            <i class="fa-solid fa-file-code"></i> 
+                                        </a>
+                                        <a href="https://github.com/omraj0/Fruits-and-Vegetables-Recognition" target="_blank">
+                                            <i class="fa-brands fa-github"></i> 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="timeline-item" style="--accent-color:#E24A68">
+                        <div class="date">E-CookBook</div>
+                        <div class="descr">
+                            <div class="work">
+                                <img class="work-img" src="Images/work-8.png" alt="E-Cookbook">
+                                <div class="layer">
+                                    <p>
+                                        "E-Cookbook" is a web application built with React.js that helps users find recipes based on ingredients or desired dishes. 
+                                        It displays recipe cards with detailed information such as cuisine, diet type, calories, and health labels. 
+                                        The app also features filters for health and diet labels, making it easy to discover suitable recipes.
+                                    </p>
+                                    <div class="icons-lang">
+                                        <img class="icons-lang-img" src="Images/icons8-nodejs-144.png" alt="Node.js">
+                                        <img class="icons-lang-img" src="Images/icons8-react-native-144.png" alt="React.js">
+                                        <img class="icons-lang-img" src="Images/icons8-js-144.png" alt="JavaScript">
+                                        <img class="icons-lang-img" src="Images/icons8-api-100.png" alt="Edamam API">
+                                        <img class="icons-lang-img" src="Images/icons8-tailwind-css-144.png" alt="html">
+                                    </div>
+                                    <div class="icons-links">
+                                        <a href="https://e-cookbook-by-om.netlify.app/" target="_blank">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </a>
+                                        <a href="https://github.com/omraj0/e-cookbook" target="_blank">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="timeline-item" style="--accent-color:#4CADAD">
+                        <div class="date">Profile Map Navigator</div>
+                        <div class="descr">
+                            <div class="work">
+                                <img class="work-img" src="Images/work-7.png" alt="Profile Map Navigator">
+                                <div class="layer">
+                                    <p>
+                                        "Profile Map Navigator" is a web application designed using the MERN stack. 
+                                        It allows users to visualize profiles on an interactive map, providing details such as location, contact info, and related profiles. 
+                                        The app enhances user interaction by combining map navigation with personalized profile information.
+                                    </p>
+                                    <div class="icons-lang">
+                                        <img class="icons-lang-img" src="Images/icons8-nodejs-144.png" alt="Node.js">
+                                        <img class="icons-lang-img" src="Images/icons8-expressjs-144.png" alt="Express.js">
+                                        <img class="icons-lang-img" src="Images/icons8-react-native-144.png" alt="React.js">
+                                        <img class="icons-lang-img" src="Images/icons8-js-144.png" alt="JavaScript">
+                                        <img class="icons-lang-img" src="Images/icons8-google-maps-144.png" alt="Google Map">
+                                    </div>
+                                    <div class="icons-links">
+                                        <a href="https://profile-navigator-with-map.vercel.app/" target="_blank">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </a>
+                                        <a href="https://github.com/omraj0/Profile-Navigator-with-Map" target="_blank">
+                                            <i class="fa-brands fa-github"></i> 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="timeline-item" style="--accent-color:#FBCA3E">
+                        <div class="date">Sorting Visualizer</div>
+                        <div class="descr">
+                            <div class="work">
+                                <img class="work-img" src="Images/work-4.png">
+                                <div class="layer">
+                                    <p>The "Sorting Visualizer" is a dynamic web application that showcases various sorting algorithms through interactive visualizations. The visual representation presents randomly generated numbers as vertical bars. As the sorting algorithm progresses, the bars move and change color to illustrate the sorting process.</p>
+                                    <div class="icons-lang">
+                                        <img class="icons-lang-img" src="Images/icons8-c-144.png" alt="C++">
+                                        <img class="icons-lang-img" src="Images/icons8-js-144.png" alt="JavaScript">
+                                        <img class="icons-lang-img" src="Images/icons8-tailwind-css-144.png" alt="Tailwind">
+                                        <img class="icons-lang-img" src="Images/icons8-html-144.png" alt="HTML">
+                                        <img class="icons-lang-img" src="Images/icons8-nodejs-144.png" alt="Node.js">
+                                    </div>
+                                    <div class="icons-links">
+                                        <a href="https://omraj0.github.io/Sorting-Visualizer/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://github.com/omraj0/Sorting-Visualizer/tree/main" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--accent-color:#4CADAD">
+                        <div class="date">Weather App</div>
+                        <div class="descr">
+                            <div class="work">
+                                <img class="work-img" src="Images/work-5.png">
+                                <div class="layer">
+                                    <p>Weather web application created using React.js, TailwindCSS and API integration, offering real-time weather updates including temperature, humidity, wind speed, sunrise and sunset time of a particular city by searching the city in seach box.</p>
+                                    <div class="icons-lang">
+                                        <img class="icons-lang-img" src="Images/icons8-react-native-144.png" alt="React.js">
+                                        <img class="icons-lang-img" src="Images/icons8-js-144.png" alt="JavaScript">
+                                        <img class="icons-lang-img" src="Images/icons8-tailwind-css-144.png" alt="Tailwind">
+                                        <img class="icons-lang-img" src="Images/icons8-api-100.png" alt="API">
+                                        <img class="icons-lang-img" src="Images/icons8-nodejs-144.png" alt="Node.js">
+                                    </div>
+                                    <div class="icons-links">
+                                        <a href="https://omraj0.github.io/Weather-App/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://github.com/omraj0/Weather-App" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--accent-color:#1B5F8C">
+                        <div class="date">Tic Tac Toe</div>
+                        <div class="descr">
+                            <div class="work">
+                                <img class="work-img" src="Images/work-3.png">
+                                <div class="layer">
+                                    <p>My "Tic Tac Toe" game is a web-based implementation of the classic two-player game. Built using HTML, CSS, JavaScript and ReactJS. It offers an interactive and enjoyable gaming experience. The game features responsive design and a user-friendly interface, making it a great way to pass the time and enjoy a timeless challenge.</p>
+                                    <div class="icons-lang">
+                                        <img class="icons-lang-img" src="Images/icons8-html-144.png" alt="HTML">
+                                        <img class="icons-lang-img" src="Images/icons8-css-144.png" alt="CSS">
+                                        <img class="icons-lang-img" src="Images/icons8-js-144.png" alt="JavaScript">
+                                        <img class="icons-lang-img" src="Images/icons8-nodejs-144.png" alt="Node.js">
+                                    </div>
+                                    <div class="icons-links">
+                                        <a href="https://omraj0.github.io/Tic-Tac-Toe/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://github.com/omraj0/Tic-Tac-Toe" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--accent-color:#FBCA3E">
+                        <div class="date">Personal Portfolio</div>
+                        <div class="descr">
+                            <div class="work">
+                                <img class="work-img" src="Images/work-1.png">
+                                <div class="layer">
+                                    <p>My "Personal Portfolio" website is a showcase of my work as a front-end web developer. It offers an elegant, user-friendly design, highlights my projects, and provides insights into my skills and background. Visit to explore my work and get to know me better.</p>
+                                    <div class="icons-lang">
+                                        <img class="icons-lang-img" src="Images/icons8-html-144.png" alt="HTML">
+                                        <img class="icons-lang-img" src="Images/icons8-css-144.png" alt="CSS">
+                                        <img class="icons-lang-img" src="Images/icons8-js-144.png" alt="JavaScript">
+                                        <img class="icons-lang-img" src="Images/icons8-bootstrap-logo-144.png" alt="Bootstrap">
+                                        <img class="icons-lang-img" src="Images/icons8-nodejs-144.png" alt="Node.js">
+                                    </div>
+                                    <div class="icons-links">
+                                        <a href="#header"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://github.com/omraj0/myPortfolio" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------------------------  Contact  ------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=omraj0100@gmail.com" target="_blank">omraj0100@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i><a href=”tel:8789195638″ target="_blank">8789195638</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/om-raj-915695228/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/omraj0" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/edgy._.omi/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://m.facebook.com/profile.php/?id=100023227296794" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <a href="Images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-solid fa-om"></i> Copyright © Om Raj | All rights are reserved <i class="fa-solid fa-om"></i></p>
+        </div>
+    </div>
+
+
+    <!--------------------------Scripts------------------------->
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbwssvPeli4FmxrtkH7PDEEcyU37bCjxGnpJcmyedAmelCYPM9vCxxZywztXpeAB0F0I/exec>'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+    var navbar = document.querySelector("nav");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role", {
+            strings: [
+                "Backend Developer",
+                "Problem Solver",
+                "Frontend Developer",
+                "Problem Solver",
+            ],
+            loop: true,
+            typeSpeed: 120,
+            backSpeed: 80,
+            backDelay: 1000,
+        });
+    </script>
+
+
+<script>
+    (function () {
+        "use strict";
+
+        // define variables
+        var items = document.querySelectorAll(".coding-timeline .coding-timeline-item");
+
+        // check if an element is in viewport
+        // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <=
+                (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function callbackFunc() {
+            for (var i = 0; i < items.length; i++) {
+                if (isElementInViewport(items[i])) {
+                    items[i].classList.add("in-view");
+                }
+            }
+        }
+
+        // listen for events
+        window.addEventListener("load", callbackFunc);
+        window.addEventListener("resize", callbackFunc);
+        window.addEventListener("scroll", callbackFunc);
+    })();
+
+</script>
+
+
+</body>
+</html>
